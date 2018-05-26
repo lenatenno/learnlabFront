@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	
+	<title>LearnLab</title>
+
+</head>
+<body>
+
+	<div id="signin_modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<div class="modal-main">
+					<p class="modal-title">Вход</p>
+					<div class="modal-body">
+						<input type="email" id="email_enter" placeholder="E-mail" class="form-control mrgnbtm" required autofocus>
+						<input type="password" id="password" placeholder="Пароль" class="form-control mrgnbtm" required>
+					</div>
+					<div class="enterbtn">
+						<button type="button" class="btn btn_enter">Войти</button>
+						<p class="forgotpass"><a href="">Забыли пароль?</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header>
+		<div class="container">
+			<div class="logo"><p><a href="index.html">LearnLab</a></p></div>
+			<div class="nav_links">
+				<p>
+					<a id="log_but" href="#signin_modal" data-toggle="modal">Войти</a>
+					<span class="line">|</span>
+					<a id="reg_but" href="registerST.html" class="signup">Регистрация</a>
+				</p>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div id="content" class="content">
+			<div id="heading">
+				<span class="headingtittle">Учитесь вместе с <span class="logo2">LearnLab</span></span>
+			</div>
+			<div class="about_main">
+				<p class="description">Хочешь быть отличным специалистом?<br>Тогда тебе к нам!</p>
+			</div>
+			<div class="row pd_bottom cen">
+				<div class="col-md-4 mobpad">
+					<div class="inner_block">
+						<p class="fa_svg"><i class="fas fa-graduation-cap"></i></p>
+						<p class="heading_block">Обучение</p>
+						<p class="description_block">Онлайн-обучение, просмотр всех курсов, разбор материала, помощь преподователя.</p>
+					</div>
+				</div>
+				<div class="col-md-4 mobpad">
+					<div class="inner_block">
+						<p class="fa_svg"><i class="fas fa-desktop"></i></p>
+						<p class="heading_block">Курсы</p>
+						<p class="description_block">Множество интерактивных курсов по самым популярным языкам программирования, составленные профессионалами своего дела.</p>
+					</div>
+				</div>
+				<div class="col-md-4 mobpad">
+					<div class="inner_block">
+						<p class="fa_svg"><i class="fab fa-youtube-square"></i></p>
+						<p class="heading_block">Вебинары</p>
+						<p class="description_block">Записывайся на еженедельные вебинары и будь их участником с любого устройства!</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row cen">
+				<div class="col-md-4 mobpad block_mainpg">
+					<div class="inner_block">
+						<p class="fa_svg"><i class="far fa-check-square"></i></p>
+						<p class="heading_block">Тесты</p>
+						<p class="description_block">Выполняй тесты, чтобы оценить свои навыки.</p>
+					</div>
+				</div>
+				<div class="col-md-4 mobpad block_mainpg">
+					<div class="inner_block">
+						<p class="fa_svg"><i class="fas fa-book"></i></p>
+						<p class="heading_block">Учебные материалы</p>
+						<p class="description_block">На портале ты сможешь найти большой подбор учебного материала на каждую учебную дисциплину.</p>
+					</div>
+				</div>
+				<div class="col-md-4 mobpad block_mainpg">
+					<div class="inner_block">
+						<p class="fa_svg"><i class="fas fa-rocket"></i></p>
+						<p class="heading_block">Карьера</p>
+						<p class="description_block">Возможность проявить себя и попасть в команду, либо собрать свою и построить новое будущее!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="allcourses">
+		<div class="container">
+			<p class="title_course1">Курсы</p>
+			<div class="course">
+				<div class="contain_course">
+					<div class="row">
+						<div class="col-md-4"> <img src="images/ruby.png" alt=""> </div>
+						<div class="col-md-8">
+							<p class="title_infocourse">Программист Ruby</p>
+							<p class="text_infocourse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+								sevdent, sunt explicabo. Nemo enim ipsam voluptatem quia
+							explicabo s consectetur adipisicing elit, voluptatem quia</p>
+							<button type="button" class="btn enter_course"><p class="text_enter">Поступить на курс</p></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class="see_other"><a href="allcourses.html">Посмотреть остальные</a></p>
+	</section>
+
+	<footer id="myFooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5" style="padding-right: 50px">
+					<h3><a href="#">О нас</a></h3>
+					<p class="txtfoot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam officia nostrum omnis expedita architecto, maxime quaerat labore eius qui distinctio tempore, iste consequuntur facere aut quidem inventore eum voluptatibus cum?</p>
+				</div>
+				<div class="col-sm-2">
+					<h5>Ссылки</h5>
+					<ul class="txtfoot">
+						<li><a href="#">Основная</a></li>
+						<li><a href="#">Войти</a></li>
+						<li><a href="#">Регистрация</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<h5>Помощь</h5>
+					<ul class="txtfoot">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Связаться</a></li>
+						<li><a href="#">Преподавателям</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<div class="social-networks">
+						<h5>Мы в соц сетях</h5>
+						<a href="#" class="twitter"><i class="fab fa-twitter-square"></i></a>
+						<a href="#" class="facebook"><i class="fab fa-facebook-square"></i></a>
+						<a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
+					</div>
+					<button type="button" class="btn">Подписаться</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

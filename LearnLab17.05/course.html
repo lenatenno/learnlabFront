@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+        <title>LearnLab</title>
+    </head>
+    <body>
+        <header>
+            <div class="container" style="width: 100%;">
+                <div class="row">
+                    <div class="logo"><p><a href="#0">LearnLab</a></p></div>
+                    <div id="unlogged" class="nav_links" >
+                        <p>
+                            <a id="log_but" data-toggle="modal" data-target="#myModal">Войти</a>
+                            <span class="line">|</span>
+                            <a class="signup" id="reg_but" href="#regSTmodal" data-toggle="modal">Регистрация</a>
+                        </p>
+                    </div>
+
+                    <div id="unloggedbar" class="nav_links col-xs dropdown">
+                            <a class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <span><i id="fas" class="fas fa-bars"></i></span></a>
+                            <ul class="ul_decor dropdown-menu pull-right">
+                                <li><a href="#" >Войти</a></li>
+                                <li><a href="#">Регистрация</a></li>
+                            </ul>
+                        </div>
+                </div>
+        </header>	
+        <div class="container" style="width: 100%;">
+            <div class="row">
+                <div class="col-sm-6" id="c_name">Название курса</div>
+                <div id="l_name" class="col-xs dropdown">
+                    <a class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span><i id="fas" class="fas fa-bars"></i></span></a>
+                    <ul class="dropdown-menu pull-right">
+                        <div>
+                            Раздел 1 <i class="fas fa-sort-down"></i>
+                        </div>
+                        <div id="collapseLG1" >
+                            <ul class="ul_decor">
+                                <li><a href="#" >Видеоурок</a></li>
+                                <li><a href="#">Тест</a></li>
+                                <li><a href="#">
+                                        Домашнее&zwnj; &zwnj;Задание
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                                Раздел 2 <i class="fas fa-sort-down"></i>
+                            </div>
+                            <div id="collapseLG2" >
+                                <ul class="ul_decor">
+                                    <li><a href="#" >Видеоурок</a></li>
+                                    <li><a href="#">Тест</a></li>
+                                    <li><a href="#">
+                                            Домашнее&zwnj; &zwnj;Задание
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </ul>
+                </div>	
+            </div>
+        </div>
+        <div id="course_course">
+            <div class="container" style="width: 100%;">
+                <div id="section_container" class="col-sm-5">
+                    <div role="tab" id="collapseLGH0" class="sections">
+                        <div class="collapsed" data-toggle="collapse" href="#collapseLG0">
+                            Раздел 1 <i class="fas fa-sort-down"></i>
+                        </div>
+                        <div id="collapseLG0" class="collapse">
+                            <ul>
+                            <li><a href="#" >Видеоурок</a></li>
+                            <li><a href="#">Тест</a></li>
+                            <li><a href="#">
+                                    Домашнее&zwnj; &zwnj;Задание
+                                </a>
+                            </li>
+                            </ul>
+                        </div>
+                        <div class="collapsed" data-toggle="collapse" href="#collapseLG1">
+                                Раздел 2 <i class="fas fa-sort-down"></i>
+                            </div>
+                        <div id="collapseLG1" class="collapse">
+                            <ul>
+                            <li><a href="#" >Видеоурок</a></li>
+                            <li><a href="#">Тест</a></li>
+                            <li><a href="#">
+                                    Домашнее&zwnj; &zwnj;Задание
+                                </a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="video_container"class="col-sm-7">
+                    <div class="path_naming">
+                        <span>Название курса</span>
+                        <span>  &zwnj; > &zwnj;  </span>
+                        <span>Название раздела</span> 
+                        <span>  &zwnj; > &zwnj; </span>
+                        <span>Название урока</span>
+                    </div>
+                    <iframe class="course_video" src="https://www.youtube.com/embed/1ieQD20Cs0o?list=LLX6ZiLGjp4Pu9EbASwg7Sfg">
+                                Your browser does not support HTML5 video.
+                    </iframe>
+                    <div class="course_description">
+                            <p class="main">Описание</p>
+                            <span class="desc"><p>JavaScript изначально создавался для того, чтобы сделать web-странички «живыми». Программы на этом языке называются скриптами. В браузере они подключаются напрямую к HTML и, как только загружается страничка – тут же выполняются.</p>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+					if ($(window).width() < 814) {
+                    $('#video_container').removeClass("col-sm-7");
+                    $('#video_container').addClass("col");
+                }            
+				if ($(window).width() < 475) {
+				    document.getElementById("c_name").innerHTML = "<p>Название </p>курса";
+				}
+        </script> 
+                
+    </body>
+    <footer id="myFooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5">
+					<h3><a href="#">О нас</a></h3>
+					<p class="txtfoot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam officia nostrum omnis expedita architecto, maxime quaerat labore eius qui distinctio tempore, iste consequuntur facere aut quidem inventore eum voluptatibus cum?</p>
+				</div>
+				<div class="col-sm-2">
+					<h5>Ссылки</h5>
+					<ul class="txtfoot">
+						<li><a href="#">Основная</a></li>
+						<li><a href="#">Войти</a></li>
+						<li><a href="#">Регистрация</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<h5>Помощь</h5>
+					<ul class="txtfoot">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Связаться</a></li>
+						<li><a href="#">Преподавателям</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<div class="social-networks">
+						<h5>Мы в соц сетях</h5>
+						<a href="#" class="twitter"><i class="fab fa-twitter-square"></i></a>
+						<a href="#" class="facebook"><i class="fab fa-facebook-square"></i></a>
+						<a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
+					</div>
+					<button type="button" class="btn btn-default">Подписаться</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</html>
